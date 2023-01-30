@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.clouds {
+    width: 100%;
+}
+
+.weather-info {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 400px;
+    top: 0;
+}
+
+.weather-box {
+    display: inline-block;
+    position: relative;
+    top: 250px;
+    height: 150px;
+    pad: 0;
+    margin: 0;
+}
+
+.info-box {
+    display: inline-block;
+    height: 150px;
+    width: 100px;
+    border: 0;
+    margin: 0;
+}
+
+.bar {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+}
+
+.entrybox {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.entry {
+    width: 17px;
+    border: 0;
+    margin: 5px 5px;
+    outline: 0;
+    transition: width 1s;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.entry:focus {
+    width: 350px;
+    transition: width 2s;
+}
+
+.entry::placeholder {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.entry:focus::placeholder {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.weekday {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.weather-picture {
+    width: 70px;
+    height: 70px;
+}
+
+.temperature {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 10px 0 0 0 ;
+}
